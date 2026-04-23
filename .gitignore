@@ -1,0 +1,44 @@
+# ─────────────────────────────────────────────────────────
+# Price Tracker — .gitignore
+# ─────────────────────────────────────────────────────────
+
+# ── Environment variables (NEVER commit secrets) ─────────
+.env
+.env.*
+!.env.example
+
+# ── Node dependencies ─────────────────────────────────────
+node_modules/
+.npm/
+
+# ── Build outputs ─────────────────────────────────────────
+dist/
+build/
+.vite/
+
+# ── Logs ─────────────────────────────────────────────────
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ── OS & editor clutter ───────────────────────────────────
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ── Puppeteer / Chrome cache ──────────────────────────────
+.cache/
+.local-chromium/
+
+# ── Misc ─────────────────────────────────────────────────
+*.local
+coverage/
